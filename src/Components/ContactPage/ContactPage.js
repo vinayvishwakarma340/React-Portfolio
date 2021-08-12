@@ -5,16 +5,16 @@ import ContactInfo from "./ContactInfo"
 
 const ContactPage = () => {
     return (
-        <section class="contact-page" id="contact-us">
+        <section className="contact-page" id="contact-us">
          <Navbar />
-            <div class="container">
-                <div class="row ">
-                        <div class="section-title sec-padding">
+            <div className="container">
+                <div className="row ">
+                        <div className="section-title sec-padding">
                             <h2>Contact Me</h2>
                         </div>
                 </div>
 
-                <div class="row">
+                <div className="row">
                     <ContactForm />
                     <ContactInfo />
                 </div>

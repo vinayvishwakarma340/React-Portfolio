@@ -7,18 +7,18 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const ContactInfo = () => {
     return (
-        <div class="contact-info col-lg-4 col-md-12 col-sm-12">
-                        <div class="contact-info-item">
+        <div className="contact-info col-lg-4 col-md-12 col-sm-12">
+                        <div className="contact-info-item">
                             <h3>Email</h3>
                             <p style={{wordWrap:"break-word"}}>vinay.myjob@gmail.com</p>
                         </div>
-                        <div class="contact-info-item">
+                        <div className="contact-info-item">
                             <h3>Phone</h3>
                             <p>+919935851285</p>
                         </div>
-                        <div class="contact-info-item">
+                        <div className="contact-info-item">
                             <h3>Follow Me</h3>
-                            <div class="social-links">
+                            <div className="social-links">
                                 <a href="https://www.facebook.com/"><FacebookIcon /></a>
                                 <a href="https://twitter.com/?lang=en"><TwitterIcon /></a>
                                 <a href="https://www.instagram.com/accounts/login/"><InstagramIcon /></a>

@@ -13,10 +13,10 @@ const AboutPage = () => {
                         <h2>about me</h2>
                     </div>
                 </div>
-            <div className="row">
-                <AboutImage />
-                <AboutText />
-            </div>
+                <div className="row">
+                    <AboutImage />
+                    <AboutText />
+                </div>
             </div>
 
         </section>
