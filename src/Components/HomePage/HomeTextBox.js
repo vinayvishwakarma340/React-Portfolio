@@ -21,7 +21,7 @@ const HomeTextBox = () => {
                             </h1>
                             <h2><span style={{color:"#562770"}}>Full Stack</span> Web Developer</h2>
                             <a href="tel:9935851285" className="btn"><PhoneIcon style={{margin:"auto 8px"}} />Call me</a>
-                            <a href="mailto:vinay.myjob@gmail.com" className="btn"><MailIcon style={{margin:"auto 8px"}}/>Send Email</a>
+                            <a href="mailTo:vinay.myjob@gmail.com" className="btn"><MailIcon style={{margin:"auto 8px"}}/>Send Email</a>
                         </div>
                     </div>
        

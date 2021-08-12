@@ -1,46 +1,36 @@
-import React from 'react'
-import {Button, makeStyles ,Box} from '@material-ui/core';
+import { Card, CardActionArea, CardContent, CardMedia, Grid, Link, makeStyles, Typography } from '@material-ui/core';
+import React from 'react';
 
-const useStyles = makeStyles((theme)=>({
-    button: {
-      background: theme.palette.success.dark,
-      border: 0,
-      borderRadius: 10,
-      boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-      color: 'white',
-      height: 48,
-      padding: '0 30px',
-    },
-    card:{
-        background:"pink",
-        border:10,
-        color:"blue"
-    }
-  }));
-
-  
-
-
-
-const PortfolioCard = () => {
-
-const classes = useStyles();
-
-    return (
-        <div>
-            <Box
-                className={classes.card}
-                boxShadow={4}
-                bgcolor="background.paper"
-                m={1}
-                p={1}
-                style={{ width: '17.7rem', height: '17rem' }}
-            >
-                boxShadow={3}
-            </Box>
-            <Button className={classes.button}>Hook</Button>;
-        </div>
-    )
+const style = {
+    maxWidth:"265px",
+    backgroundColor:"white"
 }
 
-export default PortfolioCard
+export default function ImgMediaCard(props) {
+
+    return (
+        <Grid item >
+            <Card style={style} elevation={10}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        alt="Contemplative Reptile"
+                        height="140"
+                        image={props.Image}
+                        title="Contemplative Reptile"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            {props.Title}
+                        </Typography>
+                        
+                        <Typography variant="body2" color="textSecondary" component="p">
+                           {props.Content}
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+
+        </Grid>
+    );
+}

@@ -1,27 +1,25 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid';
 import Navbar from '../HomePage/Navbar'
 import PortfolioCard from './PortfolioCard';
-
+import { Container, Grid } from '@material-ui/core';
+import {Images} from "./CardImageAPI"
 
 const PortfolioPage = () => {
 
     return (
         <div>
-        <Navbar />
-            <h1>This is portfolio page</h1>
-            <Grid container >
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-                <PortfolioCard />
-            </Grid>
+            <Navbar />
+            <Container style={{ marginTop: "20px" }} >
+                <Grid container spacing={3}>
+                    {
+                        Images.map((item,index)=>{
+                        return <PortfolioCard key={index} Title={item.title} Content={item.content} Image={item.src} />
+                        })
+                    }
+                </Grid>
+
+            </Container>
+
         </div>
     )
 }
