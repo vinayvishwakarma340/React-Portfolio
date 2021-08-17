@@ -3,11 +3,11 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Grid,
-  Typography,
+  Grid,Typography,
 } from "@material-ui/core";
 import React, { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
+import { Link } from "react-router-dom";
 
 const style = {
   maxWidth: "265px",
