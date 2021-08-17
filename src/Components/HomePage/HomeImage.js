@@ -3,7 +3,7 @@ const HomeImage = () => {
     return (
 
         <div className="home-image col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
-            <img src="images/heroImage.svg" alt="" />
+            <img src="images/heroImage.png" alt="" />
         </div>
 
     )
