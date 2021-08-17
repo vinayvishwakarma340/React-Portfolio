@@ -2,10 +2,10 @@ import React from 'react'
 import Navbar from '../HomePage/Navbar'
 import AboutImage from "./AboutImage"
 import AboutText from "./AboutText/AboutText"
-
 const AboutPage = () => {
     return (
-        <section className="about-section ">
+        <div className="main">  
+         <section className="about-section ">
          <Navbar />
             <div className="container ">
                 <div className="row">
@@ -20,6 +20,7 @@ const AboutPage = () => {
             </div>
 
         </section>
+        </div>
     )
 }
 

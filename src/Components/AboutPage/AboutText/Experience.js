@@ -12,7 +12,7 @@ const Experience = () => {
                         voluptates quis soluta molestiae, animi cum dignissimos tenetur.
                     </p>
                 </div><div className="timeline-item">
-                    <span className="date">2020-2021</span>
+                    <span className="date">2019-2021</span>
                     <h4>Family Business - <span>Modular Interior Design & Contract</span> </h4>
                     <p>Lorem ipsum, dolor sit amet consectetur ad, suscipit eligendi beatae. Itaque
                         voluptates quis soluta molestiae, animi cum dignissimos tenetur.

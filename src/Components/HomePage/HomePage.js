@@ -7,6 +7,7 @@ import HomeImage from './HomeImage'
 
 const HomePage = () => {
     return (
+        <div className="main">  
             <section className="home-section" >            
                 <Navbar />
                 <div className="container" style={{padding: "5% 0"}}>
@@ -16,6 +17,7 @@ const HomePage = () => {
                     </div>
                 </div>
              </section>
+        </div>
     )
 }
 
