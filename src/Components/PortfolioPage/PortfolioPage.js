@@ -3,7 +3,6 @@ import Navbar from "../HomePage/Navbar";
 import PortfolioCard from "./PortfolioCard";
 import { Container, Grid } from "@material-ui/core";
 import { CardContent } from "./CardContentAPI";
-import Project from "./Project";
 
 const PortfolioPage = () => {
 
