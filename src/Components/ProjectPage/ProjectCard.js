@@ -3,7 +3,8 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Grid,Typography,
+  Grid,
+  Typography,
 } from "@material-ui/core";
 import React, { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
@@ -39,12 +40,11 @@ const options = {
 // VanillaTilt style End
 
 export default function ImgMediaCard(props) {
-
   return (
     <Grid item>
       <Tilt options={options}>
-       <a href={props.Url} style={{textDecoration:"none"}}>
-          <Card style={style} >
+        <a href={props.Url} style={{ textDecoration: "none" }}>
+          <Card style={style}>
             <CardActionArea>
               <CardMedia
                 component="img"
@@ -59,12 +59,13 @@ export default function ImgMediaCard(props) {
                 </Typography>
 
                 <Typography variant="body2" color="textSecondary" component="p">
-                  <strong>Technologies: </strong>{props.Content}
+                  <strong>Technologies: </strong>
+                  {props.Content}
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
-          </a>
+        </a>
       </Tilt>
     </Grid>
   );

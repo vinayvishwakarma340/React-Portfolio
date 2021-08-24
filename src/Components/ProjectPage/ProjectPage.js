@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../HomePage/Navbar";
-import PortfolioCard from "./PortfolioCard";
+import ProjectCard from "./ProjectCard";
 import { Container, Grid } from "@material-ui/core";
 import { CardContent } from "./CardContentAPI";
 
@@ -13,7 +13,7 @@ const PortfolioPage = () => {
         <Grid container spacing={3}>
           {CardContent.map((item, index) => {
             return (
-              <PortfolioCard
+              <ProjectCard
                 key={index}
                 id={index}
                 Title={item.title}
