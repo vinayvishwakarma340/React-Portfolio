@@ -2,6 +2,7 @@ import React from 'react'
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
 
+// automatic typing library
 import Typed from 'react-typed';
 
 const HomeTextBox = () => {
